@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,230 +8,572 @@
 
     <meta
         name="description"
-        content="Discreet property care for absentee owners who value trust, precision and lasting stewardship."
+        content="Qasr Property Care — discreet property oversight, maintenance and care for absentee owners."
+    >
+
+    <link rel="icon" href="assets/branding/qasr-lion.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Jost:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet"
     >
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="top">
+<body>
 
-<header class="site-header">
+<!-- ============================================================
+     ICON SYSTEM
+============================================================ -->
 
-    <div class="container header-inner">
+<svg
+    width="0"
+    height="0"
+    style="position:absolute"
+    aria-hidden="true"
+>
 
-        <a href="index.html" class="brand">
+    <defs>
 
-            <img
-                src="assets/branding/qasr-lion.png"
-                alt="Qasr Property Care"
-                class="brand-lion"
-            >
+        <symbol id="icon-check" viewBox="0 0 40 40">
+            <rect x="10" y="7" width="20" height="26" rx="1"/>
+            <path d="M15 14h10"/>
+            <path d="M15 19h10"/>
+            <path d="M15 24h6"/>
+            <path d="M24 27l2 2 4-5"/>
+        </symbol>
 
-            <span class="brand-name">
-                QASR
-                <small>PROPERTY CARE</small>
-            </span>
+        <symbol id="icon-fix" viewBox="0 0 40 40">
+            <path d="M12 12l16 16"/>
+            <path d="M12 28l16-16"/>
+            <circle cx="12" cy="12" r="3"/>
+            <circle cx="28" cy="28" r="3"/>
+        </symbol>
 
-        </a>
+        <symbol id="icon-monitor" viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="14"/>
+            <path d="M8 26 L15 18 L20 23 L28 13 L32 18"/>
+        </symbol>
+
+        <symbol id="icon-shield" viewBox="0 0 40 40">
+            <path d="M20 6 L32 11 V20 C32 29 26 34 20 35 C14 34 8 29 8 20 V11Z"/>
+            <path d="M14 20 L18 24 L27 15"/>
+        </symbol>
+
+        <symbol id="icon-history" viewBox="0 0 40 40">
+            <path d="M9 9 H31 V31 H9Z"/>
+            <path d="M14 15h12"/>
+            <path d="M14 20h12"/>
+            <path d="M14 25h7"/>
+        </symbol>
+
+    </defs>
+
+</svg>
 
 
-        <nav class="main-nav">
+<!-- ============================================================
+     MOBILE MENU
+============================================================ -->
 
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="approach.html">Our Approach</a>
-            <a href="properties.html">Properties</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+<nav id="mobileMenu" class="mobile-menu">
 
-            <a href="client-access.html" class="client-access">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#approach">Our Approach</a>
+
+</nav>
+
+
+<!-- ============================================================
+     HOME
+============================================================ -->
+
+<section class="home" id="home">
+
+    <div class="container">
+
+        <!-- NAVIGATION -->
+
+        <nav class="site-nav">
+
+            <a href="#home" class="brand">
+
+                <span class="brand-mark">
+                    <img
+                        src="assets/branding/qasr-lion.png"
+                        alt="Qasr Property Care"
+                        width="80"
+                        height="80"
+                    >
+                </span>
+
+                <span class="brand-copy">
+                    <span class="brand-name">QASR</span>
+                    <span class="brand-sub">Property Care</span>
+                </span>
+
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="#home" class="active">Home</a>
+                <a href="#services">Services</a>
+                <a href="#approach">Our Approach</a>
+
+            </div>
+
+
+            <a href="#" class="client-access">
                 Client Access
             </a>
+
+
+            <button
+                class="menu-toggle"
+                aria-expanded="false"
+                aria-label="Open menu"
+                type="button"
+            >
+                ☰
+            </button>
 
         </nav>
 
 
-        <button
-            class="menu-toggle"
-            type="button"
-            aria-label="Open navigation"
-        >
-            <span></span>
-            <span></span>
-        </button>
+        <!-- HERO -->
+
+        <section class="home-hero">
+
+            <div class="home-hero-grid">
+
+
+                <div class="hero-copy">
+
+                    <div class="hero-rule"></div>
+
+                    <h1>
+                        Your property<br>
+                        is <em>never</em> unattended.
+                    </h1>
+
+                    <div class="hero-script script">
+                        Discretion. Consistency. Peace of mind.
+                    </div>
+
+                    <p class="hero-description">
+                        We discreetly oversee and care for your property
+                        with unwavering attention, so it remains exactly
+                        as you left it, always.
+                    </p>
+
+                    <a
+                        href="#approach"
+                        class="hero-button"
+                    >
+                        Discover our approach&nbsp; →
+                    </a>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <img
+                        src="assets/images/hero.webp"
+                        alt="Elegant private property under discreet Qasr oversight"
+                        loading="eager"
+                        fetchpriority="high"
+                        decoding="async"
+                    >
+
+                </div>
+
+
+            </div>
+
+        </section>
 
     </div>
 
-</header>
+
+    <!-- INTRO -->
+
+    <div class="home-intro">
 
 
-<main>
+        <div class="intro-statement">
 
+            <span class="eyebrow">
+                Qasr Property Care
+            </span>
 
-    <!-- HERO -->
+            <h2>
+                Private by nature.<br>
+                Precise by choice.
+            </h2>
 
-    <section class="hero">
-
-        <div class="hero-media">
-
-            <img
-                src="assets/images/hero.webp"
-                alt="Private property cared for by Qasr Property Care"
-                fetchpriority="high"
-            >
-
-        </div>
-
-        <div class="hero-overlay"></div>
-
-
-        <div class="container hero-inner">
-
-            <div class="hero-content">
-
-                <p class="eyebrow">
-                    PRIVATE PROPERTY CARE
-                </p>
-
-                <h1>
-                    Your property
-                    <span>is never unattended.</span>
-                </h1>
-
-                <p class="hero-subtitle">
-                    Discretion. Consistency. Peace of mind.
-                </p>
-
-                <p class="hero-description">
-                    We discreetly oversee and care for your property
-                    with unwavering attention, so it remains exactly
-                    as you left it, always.
-                </p>
-
-                <a
-                    href="approach.html"
-                    class="hero-button"
-                >
-                    Discover our approach
-                    <span>→</span>
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- POSITIONING -->
-
-    <section class="positioning">
-
-        <div class="container">
-
-            <p class="section-label">
-                QASR PROPERTY CARE
+            <p>
+                A discreet service dedicated to absentee owners
+                who value trust, precision and lasting stewardship.
             </p>
 
-            <div class="positioning-grid">
+        </div>
 
-                <div>
 
-                    <h2>
-                        Private by nature.
-                        <span>Precise by choice.</span>
-                    </h2>
+        <!-- FEATURES -->
+
+        <div class="intro-features">
+
+
+            <div class="feature">
+
+                <div class="medallion">
+
+                    <svg
+                        class="icon"
+                        aria-hidden="true"
+                    >
+                        <use href="#icon-monitor"></use>
+                    </svg>
 
                 </div>
 
+                <h3>
+                    Property<br>
+                    Monitoring
+                </h3>
 
-                <div class="positioning-text">
+                <p>
+                    Regular inspections and clear reporting.
+                </p>
 
-                    <p>
-                        A discreet service dedicated to absentee
-                        owners who value trust, precision and
-                        lasting stewardship.
-                    </p>
+            </div>
+
+
+            <div class="feature">
+
+                <div class="medallion">
+
+                    <svg
+                        class="icon"
+                        aria-hidden="true"
+                    >
+                        <use href="#icon-fix"></use>
+                    </svg>
 
                 </div>
 
+                <h3>
+                    Maintenance<br>
+                    &amp; Care
+                </h3>
+
+                <p>
+                    Preventive care and trusted craftsmen.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="medallion">
+
+                    <svg
+                        class="icon"
+                        aria-hidden="true"
+                    >
+                        <use href="#icon-shield"></use>
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Security &amp;<br>
+                    Confidentiality
+                </h3>
+
+                <p>
+                    Discreet oversight and controlled access.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="medallion">
+
+                    <svg
+                        class="icon"
+                        aria-hidden="true"
+                    >
+                        <use href="#icon-check"></use>
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Preparation<br>
+                    &amp; Checks
+                </h3>
+
+                <p>
+                    Your property prepared for your return.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- FINAL HOME -->
+
+    <div class="home-final">
+
+        <span class="lion-watermark">
+
+            <img
+                src="assets/branding/qasr-lion.png"
+                alt=""
+                width="160"
+                height="160"
+                loading="lazy"
+                decoding="async"
+            >
+
+        </span>
+
+        <span class="script">
+            We preserve more than property.
+            We preserve your peace of mind.
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- ============================================================
+     SERVICES
+============================================================ -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <nav class="site-nav">
+
+            <a href="#home" class="brand">
+
+                <span class="brand-mark">
+
+                    <img
+                        src="assets/branding/qasr-lion.png"
+                        alt="Qasr Property Care"
+                        width="80"
+                        height="80"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </span>
+
+                <span class="brand-copy">
+                    <span class="brand-name">QASR</span>
+                    <span class="brand-sub">Property Care</span>
+                </span>
+
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="#home">Home</a>
+                <a href="#services" class="active">Services</a>
+                <a href="#approach">Our Approach</a>
+
+            </div>
+
+
+            <a href="#" class="client-access">
+                Client Access
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                aria-expanded="false"
+                aria-label="Open menu"
+                type="button"
+            >
+                ☰
+            </button>
+
+        </nav>
+
+    </div>
+
+
+    <!-- SERVICES HEADER -->
+
+    <header class="services-header">
+
+        <span class="lion-watermark">
+
+            <img
+                src="assets/branding/qasr-lion.png"
+                alt=""
+                width="180"
+                height="180"
+                loading="lazy"
+                decoding="async"
+            >
+
+        </span>
+
+
+        <div class="services-header-content">
+
+            <span class="eyebrow">
+                The Qasr Standard
+            </span>
+
+            <h1>
+                Our Services
+            </h1>
+
+            <span class="script">
+                Care in every detail.
+            </span>
+
+            <div class="subline">
+                Two services. One continuous standard of care.
             </div>
 
         </div>
 
-    </section>
+    </header>
 
 
-    <!-- FOUR PILLARS -->
+    <!-- PRODUCTS -->
 
-    <section class="pillars">
+    <section class="products-section">
 
         <div class="container">
 
-            <div class="pillar-grid">
+            <div class="products-intro">
+
+                <span class="eyebrow">
+                    Two services
+                </span>
+
+                <h2>
+                    One continuous standard.
+                </h2>
+
+                <p>
+                    Every Qasr engagement begins with knowing the
+                    property precisely, and continues with acting
+                    whenever something requires attention.
+                </p>
+
+            </div>
 
 
-                <article class="pillar">
+            <div class="products-grid">
 
-                    <span class="pillar-number">01</span>
+
+                <article class="product-card">
+
+                    <div class="medallion">
+
+                        <svg
+                            class="icon"
+                            aria-hidden="true"
+                        >
+                            <use href="#icon-check"></use>
+                        </svg>
+
+                    </div>
+
+                    <span class="eyebrow">
+                        Qasr Check
+                    </span>
 
                     <h3>
-                        Property<br>
-                        Monitoring
+                        Check
                     </h3>
 
-                    <p>
-                        Regular inspections and clear reporting.
+                    <div class="product-kicker">
+                        Inspect. Assess. Report.
+                    </div>
+
+                    <p class="product-description">
+                        A thorough inspection of your property —
+                        condition, anomalies and recommendations —
+                        with a fully documented, time-stamped history
+                        you can revisit at any time.
                     </p>
+
+                    <a
+                        href="#approach"
+                        class="gold-link"
+                    >
+                        Learn more →
+                    </a>
 
                 </article>
 
 
-                <article class="pillar">
+                <article class="product-card">
 
-                    <span class="pillar-number">02</span>
+                    <div class="medallion">
 
-                    <h3>
-                        Maintenance<br>
-                        &amp; Care
-                    </h3>
+                        <svg
+                            class="icon"
+                            aria-hidden="true"
+                        >
+                            <use href="#icon-fix"></use>
+                        </svg>
 
-                    <p>
-                        Preventive care and trusted craftsmen.
-                    </p>
+                    </div>
 
-                </article>
-
-
-                <article class="pillar">
-
-                    <span class="pillar-number">03</span>
+                    <span class="eyebrow">
+                        Qasr Fix
+                    </span>
 
                     <h3>
-                        Security &amp;<br>
-                        Confidentiality
+                        Fix
                     </h3>
 
-                    <p>
-                        Discreet oversight and controlled access.
+                    <div class="product-kicker">
+                        Resolve. Restore. Record.
+                    </div>
+
+                    <p class="product-description">
+                        When something needs attention, verified
+                        professionals resolve it discreetly —
+                        every intervention followed through and
+                        documented with before-and-after evidence.
                     </p>
 
-                </article>
-
-
-                <article class="pillar">
-
-                    <span class="pillar-number">04</span>
-
-                    <h3>
-                        Preparation<br>
-                        &amp; Checks
-                    </h3>
-
-                    <p>
-                        Your property prepared for your return.
-                    </p>
+                    <a
+                        href="#approach"
+                        class="gold-link"
+                    >
+                        Learn more →
+                    </a>
 
                 </article>
 
@@ -244,30 +585,156 @@
     </section>
 
 
-    <!-- PEACE OF MIND -->
+    <!-- GUARANTEES -->
 
-    <section class="peace-of-mind">
+    <section class="guarantees">
 
-        <div class="peace-image">
+        <span class="lion-watermark">
+
+            <img
+                src="assets/branding/qasr-lion.png"
+                alt=""
+                width="180"
+                height="180"
+                loading="lazy"
+                decoding="async"
+            >
+
+        </span>
+
+
+        <div class="container guarantees-content">
+
+
+            <div class="guarantees-heading">
+
+                <span class="eyebrow">
+                    Included with every Qasr service
+                </span>
+
+                <h2>
+                    Private by nature.<br>
+                    Precise by choice.
+                </h2>
+
+                <p>
+                    Monitoring and confidentiality are not separate
+                    products. They are part of how every Qasr service
+                    is delivered.
+                </p>
+
+            </div>
+
+
+            <div class="guarantees-grid">
+
+
+                <div class="guarantee">
+
+                    <div class="guarantee-icon">
+
+                        <svg
+                            class="icon"
+                            aria-hidden="true"
+                        >
+                            <use href="#icon-monitor"></use>
+                        </svg>
+
+                    </div>
+
+                    <h3>
+                        Property Monitoring
+                    </h3>
+
+                    <p>
+                        Regular oversight keeps you informed,
+                        even when you're away.
+                    </p>
+
+                </div>
+
+
+                <div class="guarantee">
+
+                    <div class="guarantee-icon">
+
+                        <svg
+                            class="icon"
+                            aria-hidden="true"
+                        >
+                            <use href="#icon-shield"></use>
+                        </svg>
+
+                    </div>
+
+                    <h3>
+                        Security &amp; Confidentiality
+                    </h3>
+
+                    <p>
+                        Discreet handling, controlled access
+                        and strict confidentiality.
+                    </p>
+
+                </div>
+
+
+                <div class="guarantee">
+
+                    <div class="guarantee-icon">
+
+                        <svg
+                            class="icon"
+                            aria-hidden="true"
+                        >
+                            <use href="#icon-history"></use>
+                        </svg>
+
+                    </div>
+
+                    <h3>
+                        Continuous Record
+                    </h3>
+
+                    <p>
+                        Every visit, finding and intervention
+                        is documented.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURE BAND -->
+
+    <section class="feature-band">
+
+        <div class="feature-band-image">
 
             <img
                 src="assets/images/peace-of-mind.webp"
-                alt="Qasr Property Care"
+                alt="Discreet property care and access"
                 loading="lazy"
+                decoding="async"
             >
 
         </div>
 
 
-        <div class="peace-content">
+        <div class="feature-band-copy on-burgundy">
 
-            <p class="section-label">
-                ABSENTEE OWNERSHIP
-            </p>
+            <span class="eyebrow">
+                Absentee ownership
+            </span>
 
             <h2>
-                We preserve more than property.
-                <span>We preserve your peace of mind.</span>
+                Perfectly overseen.
             </h2>
 
             <p>
@@ -278,11 +745,10 @@
             </p>
 
             <a
-                href="approach.html"
-                class="text-link"
+                href="#approach"
+                class="gold-link"
             >
-                Discover our approach
-                <span>→</span>
+                Discover our approach →
             </a>
 
         </div>
@@ -290,67 +756,392 @@
     </section>
 
 
-    <!-- FINAL STATEMENT -->
+    <div class="services-final">
 
-    <section class="final-statement">
+        <span class="script">
+            Discreet care. Constant presence.
+            Total peace of mind.
+        </span>
 
-        <div class="container">
+    </div>
 
-            <p>
-                Discreet care.
-                Constant presence.
-                Total peace of mind.
-            </p>
-
-        </div>
-
-    </section>
-
-</main>
+</section>
 
 
-<footer class="site-footer">
+<!-- ============================================================
+     OUR APPROACH
+============================================================ -->
 
-    <div class="container footer-inner">
+<section class="approach" id="approach">
+
+    <div class="container">
+
+        <nav class="site-nav">
+
+            <a href="#home" class="brand">
+
+                <span class="brand-mark">
+
+                    <img
+                        src="assets/branding/qasr-lion.png"
+                        alt="Qasr Property Care"
+                        width="80"
+                        height="80"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </span>
+
+                <span class="brand-copy">
+                    <span class="brand-name">QASR</span>
+                    <span class="brand-sub">Property Care</span>
+                </span>
+
+            </a>
 
 
-        <a href="index.html" class="footer-brand">
+            <div class="nav-links">
 
-            <img
-                src="assets/branding/qasr-lion.png"
-                alt="Qasr Property Care"
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#approach" class="active">Our Approach</a>
+
+            </div>
+
+
+            <a href="#" class="client-access">
+                Client Access
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                aria-expanded="false"
+                aria-label="Open menu"
+                type="button"
             >
-
-            <span>
-                QASR
-                <small>Property Care</small>
-            </span>
-
-        </a>
-
-
-        <nav class="footer-nav">
-
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="approach.html">Our Approach</a>
-            <a href="properties.html">Properties</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="client-access.html">Client Access</a>
+                ☰
+            </button>
 
         </nav>
 
     </div>
 
 
-    <div class="container footer-bottom">
+    <!-- APPROACH HEADER -->
+
+    <header class="approach-header">
+
+        <span class="lion-watermark">
+
+            <img
+                src="assets/branding/qasr-lion.png"
+                alt=""
+                width="180"
+                height="180"
+                loading="lazy"
+                decoding="async"
+            >
+
+        </span>
+
+
+        <div class="approach-header-content">
+
+            <span class="eyebrow">
+                How we work
+            </span>
+
+            <h1>
+                Our Approach
+            </h1>
+
+            <span class="script">
+                Trust, built on precision.
+            </span>
+
+        </div>
+
+    </header>
+
+
+    <!-- APPROACH INTRO -->
+
+    <section class="approach-intro">
+
+        <div class="container">
+
+            <span class="eyebrow">
+                The Qasr cycle
+            </span>
+
+            <h2>
+                A property is never simply checked once.
+            </h2>
+
+            <p>
+                We follow a continuous cycle designed to give
+                you visibility, action and a reliable history
+                of everything that happens while you are away.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- TIMELINE -->
+
+    <section class="timeline-section">
+
+        <div class="container">
+
+            <div class="timeline">
+
+
+                <div class="timeline-step">
+
+                    <div class="timeline-marker">
+
+                        <svg
+                            class="icon"
+                            aria-hidden="true"
+                        >
+                            <use href="#icon-check"></use>
+                        </svg>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+                        <span class="eyebrow">
+                            Check
+                            <span class="timeline-number">01</span>
+                        </span>
+
+                        <h3>
+                            We look closely.
+                        </h3>
+
+                        <p>
+                            Our experts visit your property with
+                            a meticulous eye. Every relevant detail
+                            is inspected, photographed and documented —
+                            from visible condition to anything that
+                            may require attention.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-step">
+
+                    <div class="timeline-marker">
+
+                        <svg
+                            class="icon"
+                            aria-hidden="true"
+                        >
+                            <use href="#icon-monitor"></use>
+                        </svg>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+                        <span class="eyebrow">
+                            Score
+                            <span class="timeline-number">02</span>
+                        </span>
+
+                        <h3>
+                            We make condition clear.
+                        </h3>
+
+                        <p>
+                            Findings are assessed and scored
+                            according to their condition and priority.
+                            You receive a clear overview rather than
+                            a collection of disconnected observations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-step">
+
+                    <div class="timeline-marker">
+
+                        <svg
+                            class="icon"
+                            aria-hidden="true"
+                        >
+                            <use href="#icon-fix"></use>
+                        </svg>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+                        <span class="eyebrow">
+                            Fix
+                            <span class="timeline-number">03</span>
+                        </span>
+
+                        <h3>
+                            We act when action is needed.
+                        </h3>
+
+                        <p>
+                            When something requires attention,
+                            trusted professionals resolve it discreetly
+                            and efficiently. Every intervention is
+                            followed through rather than simply reported.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-step">
+
+                    <div class="timeline-marker">
+
+                        <svg
+                            class="icon"
+                            aria-hidden="true"
+                        >
+                            <use href="#icon-history"></use>
+                        </svg>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+                        <span class="eyebrow">
+                            History
+                            <span class="timeline-number">04</span>
+                        </span>
+
+                        <h3>
+                            Nothing gets lost.
+                        </h3>
+
+                        <p>
+                            Every visit, finding and intervention
+                            becomes part of a complete, time-stamped
+                            property history — giving you a clear record
+                            of what happened, when it happened and what
+                            was done.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- APPROACH FEATURE -->
+
+    <section class="feature-band">
+
+        <div class="feature-band-image">
+
+            <img
+                src="assets/images/peace-of-mind.webp"
+                alt="Qasr Property Care — discreet access and oversight"
+                loading="lazy"
+                decoding="async"
+            >
+
+        </div>
+
+
+        <div class="feature-band-copy on-emerald">
+
+            <span class="eyebrow">
+                Absentee ownership
+            </span>
+
+            <h2>
+                Your absence should never create uncertainty.
+            </h2>
+
+            <p>
+                The Qasr approach is deliberately simple:
+                know the property, understand its condition,
+                act when necessary and keep an exact record.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- APPROACH FINAL -->
+
+    <section class="approach-final">
+
+        <span class="lion-watermark">
+
+            <img
+                src="assets/branding/qasr-lion.png"
+                alt=""
+                width="180"
+                height="180"
+                loading="lazy"
+                decoding="async"
+            >
+
+        </span>
+
+        <span class="script">
+            One cycle. Total clarity.
+            Absolute peace of mind.
+        </span>
 
         <p>
-            © 2026 Qasr Property Care. All rights reserved.
+            We follow a simple cycle with relentless rigor
+            to protect what matters most.
         </p>
 
-        <a href="#top">
+    </section>
+
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+
+<footer class="site-footer">
+
+    <div class="container footer-inner">
+
+        <div class="footer-copy">
+            © 2026 Qasr Property Care. All rights reserved.
+        </div>
+
+        <a
+            href="#home"
+            class="footer-link"
+        >
             Back to top ↑
         </a>
 
@@ -359,7 +1150,8 @@
 </footer>
 
 
-<script src="js/script.js"></script>
+<!-- JavaScript -->
+<script src="js/script.js" defer></script>
 
 </body>
 </html>
